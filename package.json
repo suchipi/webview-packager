@@ -1,0 +1,12 @@
+{
+  "name": "webview-bundler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@suchipi/webview": "^0.2.0",
+    "shelljs": "^0.8.4",
+    "yargs-parser": "^20.2.0"
+  },
+  "bin": "cli.js"
+}
