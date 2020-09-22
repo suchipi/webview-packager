@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@suchipi/webview@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@suchipi/webview/-/webview-0.2.0.tgz#d4863d8eea85b3016514cfce4c0f4eabdf19a5ab"
-  integrity sha512-k0ziJe5uCPamWor2rIM4NK92FDFQMkKd16iCx143LepxAS6Fz2QDePpUwVVQIizivni4h4Iuq+olT1pqykzg6A==
+"@suchipi/webview@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@suchipi/webview/-/webview-0.2.1.tgz#ff3567e0368d7d9a68a2704bf909277486afca6b"
+  integrity sha512-LgTnHSebnvKTT38adzom0UQ7zxCxs1c+5h4tIhzgnfs+XLlT5PzRTD6XUEvD9YmEZQGIL6VrZvTlanvL+m76RA==
   dependencies:
     yargs-parser "^20.2.0"
 

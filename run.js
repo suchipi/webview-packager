@@ -26,6 +26,9 @@ function run(options) {
   shelljs.cp("-R", binDir("linux-amd64"), outDir);
   shelljs.cp("-R", binDir("windows-amd64"), outDir);
 
+  shelljs.rm(path.join(outDir, "linux-amd64", "README.md"));
+  shelljs.rm(path.join(outDir, "windows-amd64", "README.md"));
+
   shelljs.mv(
     path.join(outDir, "darwin-amd64", "webview"),
     path.join(outDir, "darwin-amd64", name)
@@ -37,7 +40,7 @@ function run(options) {
   );
 
   shelljs.mv(
-    path.join(outDir, "windows-amd64", "webview.exe"),
+    path.join(outDir, "windows-amd64", "launcher.exe"),
     path.join(outDir, "windows-amd64", name + ".exe")
   );
 
@@ -116,6 +119,8 @@ function run(options) {
     .toEnd(
       path.join(outDir, "darwin-amd64", name + ".app", "Contents", "Info.plist")
     );
+
+  console.log(`Contents written to '${outDir}'.`);
 }
 
 module.exports = run;
