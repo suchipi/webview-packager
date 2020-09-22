@@ -44,11 +44,7 @@ function run(options) {
     path.join(outDir, "windows-amd64", name + ".exe")
   );
 
-  const launcherConfig = JSON.stringify(
-    { title, webviewExe: name + ".exe" },
-    null,
-    2
-  );
+  const launcherConfig = JSON.stringify({ title }, null, 2);
 
   shelljs
     .ShellString(launcherConfig)
